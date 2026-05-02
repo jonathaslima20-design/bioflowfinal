@@ -104,7 +104,7 @@ export function BoardroomTheme({ profile, links, socials, videos, banners, track
         aria-hidden
       />
 
-      <div className="relative max-w-md mx-auto px-6 pt-10 pb-16">
+      <div className="relative max-w-md mx-auto px-6 pt-[72px] pb-16">
         {s.ticker && (
           <div
             className="flex items-center justify-between text-[9px] tracking-[0.2em] mb-8 px-3 py-2"

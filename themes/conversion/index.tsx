@@ -147,7 +147,7 @@ export function ConversionTheme({ profile, links, socials, videos, banners, trac
         </div>
       )}
 
-      <div className="relative max-w-md mx-auto px-5 pt-8 pb-16">
+      <div className="relative max-w-md mx-auto px-5 pt-[72px] pb-16">
         <div className="flex flex-col items-center text-center">
           <div
             className="relative rounded-full overflow-hidden"

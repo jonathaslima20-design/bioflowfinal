@@ -97,7 +97,7 @@ export function ClayTheme({ profile, links, socials, videos, banners, track }: B
         aria-hidden
       />
 
-      <div className="relative max-w-md mx-auto px-6 pt-10 pb-24">
+      <div className="relative max-w-md mx-auto px-6 pt-[72px] pb-24">
         <div className="flex flex-col items-center text-center">
           <div className="relative" style={{ width: profile.avatar_size ?? 120, height: profile.avatar_size ?? 120 }}>
             {s.blobAvatar && (

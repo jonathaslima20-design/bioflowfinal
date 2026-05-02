@@ -100,7 +100,7 @@ export function CyberTheme({ profile, links, socials, videos, banners, track }: 
         />
       )}
 
-      <div className="relative max-w-md mx-auto px-5 pt-10 pb-24 text-sm">
+      <div className="relative max-w-md mx-auto px-5 pt-[72px] pb-24 text-sm">
         <div className="flex items-center gap-2 mb-6 text-xs" style={{ color: promptColor }}>
           <span style={{ opacity: 0.7 }}>$</span>
           <span className={s.typewriter ? 'cyber-typewriter' : ''}>./boot --user={profile.username}</span>

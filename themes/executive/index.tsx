@@ -104,7 +104,7 @@ export function ExecutiveTheme({ profile, links, socials, videos, banners, track
         fontFamily: bodyFont,
       }}
     >
-      <div className="relative max-w-md mx-auto px-8" style={{ paddingTop: d.padY, paddingBottom: d.padY + 24 }}>
+      <div className="relative max-w-md mx-auto px-8" style={{ paddingTop: 72, paddingBottom: d.padY + 24 }}>
         {s.label && (
           <div
             className="flex items-center justify-between text-[10px] tracking-[0.3em] uppercase opacity-60 mb-8"

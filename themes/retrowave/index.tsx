@@ -120,7 +120,7 @@ export function RetrowaveTheme({ profile, links, socials, videos, banners, track
         />
       )}
 
-      <div className="relative max-w-md mx-auto px-5 pt-10 pb-24">
+      <div className="relative max-w-md mx-auto px-5 pt-[72px] pb-24">
         <div className="flex flex-col items-center text-center">
           <div
             className="rounded-full overflow-hidden"

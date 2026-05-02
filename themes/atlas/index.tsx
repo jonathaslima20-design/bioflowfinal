@@ -51,9 +51,9 @@ export const atlasMeta: BioThemeMeta = {
 };
 
 const DENSITY: Record<string, { headerPad: string; gap: string; linkPad: string; maxW: string }> = {
-  compact: { headerPad: 'pt-8 pb-6', gap: 'gap-2', linkPad: 'px-4 py-3', maxW: 'max-w-md' },
-  default: { headerPad: 'pt-12 pb-8', gap: 'gap-3', linkPad: 'px-5 py-4', maxW: 'max-w-md' },
-  comfortable: { headerPad: 'pt-16 pb-10', gap: 'gap-4', linkPad: 'px-6 py-5', maxW: 'max-w-lg' },
+  compact: { headerPad: 'pt-[72px] pb-6', gap: 'gap-2', linkPad: 'px-4 py-3', maxW: 'max-w-md' },
+  default: { headerPad: 'pt-[72px] pb-8', gap: 'gap-3', linkPad: 'px-5 py-4', maxW: 'max-w-md' },
+  comfortable: { headerPad: 'pt-[72px] pb-10', gap: 'gap-4', linkPad: 'px-6 py-5', maxW: 'max-w-lg' },
 };
 
 const STATUS_MAP: Record<string, { text: string; color: string }> = {

@@ -135,7 +135,7 @@ export function AgencyTheme({ profile, links, socials, videos, banners, track }:
         </>
       )}
 
-      <div className="relative max-w-md mx-auto px-6 pt-10 pb-20">
+      <div className="relative max-w-md mx-auto px-6 pt-[72px] pb-20">
         {s.topTag !== 'none' && (
           <div className="flex items-center justify-between text-[10px] tracking-[0.35em] mb-10">
             <div className="flex items-center gap-2" style={{ color: accent, fontFamily: monoFamily }}>

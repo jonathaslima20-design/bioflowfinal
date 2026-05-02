@@ -68,7 +68,7 @@ export function AuroraTheme({ profile, links, socials, videos, banners, track }:
         aria-hidden
       />
 
-      <div className="relative max-w-md mx-auto px-5 pt-10 pb-24" style={{ fontFamily: 'var(--font-inter), system-ui' }}>
+      <div className="relative max-w-md mx-auto px-5 pt-[72px] pb-24" style={{ fontFamily: 'var(--font-inter), system-ui' }}>
         <div className="flex flex-col items-center text-center">
           <div className="relative" style={{ width: profile.avatar_size ?? 110, height: profile.avatar_size ?? 110 }}>
             {s.avatarHalo && (
