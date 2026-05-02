@@ -9,6 +9,16 @@ import { AtlasTheme, atlasMeta } from './atlas';
 import { ConversionTheme, conversionMeta } from './conversion';
 import { CreatorTheme, creatorMeta } from './creator';
 import { AgencyTheme, agencyMeta } from './agency';
+import { MonolithTheme, monolithMeta } from './monolith';
+import { GalleryTheme, galleryMeta } from './gallery';
+import { CoutureTheme, coutureMeta } from './couture';
+import { PrismTheme, prismMeta } from './prism';
+import { LiquidTheme, liquidMeta } from './liquid';
+import { NeonLabTheme, neonlabMeta } from './neonlab';
+import { PaperTheme, paperMeta } from './paper';
+import { ChromeTheme, chromeMeta } from './chrome';
+import { BotanicalTheme, botanicalMeta } from './botanical';
+import { KineticTheme, kineticMeta } from './kinetic';
 import type { BioThemeDefaults, BioThemeDefinition, BioThemeMeta } from './types';
 
 const brutalistMeta: BioThemeMeta = {
@@ -42,6 +52,16 @@ export const THEMES: Record<string, BioThemeDefinition> = {
   conversion: { meta: conversionMeta, component: ConversionTheme },
   creator: { meta: creatorMeta, component: CreatorTheme },
   agency: { meta: agencyMeta, component: AgencyTheme },
+  monolith: { meta: monolithMeta, component: MonolithTheme },
+  gallery: { meta: galleryMeta, component: GalleryTheme },
+  couture: { meta: coutureMeta, component: CoutureTheme },
+  prism: { meta: prismMeta, component: PrismTheme },
+  liquid: { meta: liquidMeta, component: LiquidTheme },
+  neonlab: { meta: neonlabMeta, component: NeonLabTheme },
+  paper: { meta: paperMeta, component: PaperTheme },
+  chrome: { meta: chromeMeta, component: ChromeTheme },
+  botanical: { meta: botanicalMeta, component: BotanicalTheme },
+  kinetic: { meta: kineticMeta, component: KineticTheme },
 };
 
 export function getTheme(key: string | undefined | null): BioThemeDefinition {
