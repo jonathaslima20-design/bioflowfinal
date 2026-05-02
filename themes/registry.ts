@@ -19,6 +19,21 @@ import { PaperTheme, paperMeta } from './paper';
 import { ChromeTheme, chromeMeta } from './chrome';
 import { BotanicalTheme, botanicalMeta } from './botanical';
 import { KineticTheme, kineticMeta } from './kinetic';
+import { TerminalTheme, terminalMeta } from './terminal';
+import { SaasTheme, saasMeta } from './saas';
+import { ApiDocsTheme, apidocsMeta } from './apidocs';
+import { AiTheme, aiMeta } from './ai';
+import { MatrixTheme, matrixMeta } from './matrix';
+import { WallStreetTheme, wallstreetMeta } from './wallstreet';
+import { ConsultancyTheme, consultancyMeta } from './consultancy';
+import { EquityTheme, equityMeta } from './equity';
+import { CLevelTheme, clevelMeta } from './clevel';
+import { KeynoteTheme, keynoteMeta } from './keynote';
+import { StorefrontTheme, storefrontMeta } from './storefront';
+import { BoutiqueTheme, boutiqueMeta } from './boutique';
+import { FlashTheme, flashMeta } from './flash';
+import { MarketplaceTheme, marketplaceMeta } from './marketplace';
+import { DtcTheme, dtcMeta } from './dtc';
 import type { BioThemeDefaults, BioThemeDefinition, BioThemeMeta } from './types';
 
 const brutalistMeta: BioThemeMeta = {
@@ -62,6 +77,21 @@ export const THEMES: Record<string, BioThemeDefinition> = {
   chrome: { meta: chromeMeta, component: ChromeTheme },
   botanical: { meta: botanicalMeta, component: BotanicalTheme },
   kinetic: { meta: kineticMeta, component: KineticTheme },
+  terminal: { meta: terminalMeta, component: TerminalTheme },
+  saas: { meta: saasMeta, component: SaasTheme },
+  apidocs: { meta: apidocsMeta, component: ApiDocsTheme },
+  ai: { meta: aiMeta, component: AiTheme },
+  matrix: { meta: matrixMeta, component: MatrixTheme },
+  wallstreet: { meta: wallstreetMeta, component: WallStreetTheme },
+  consultancy: { meta: consultancyMeta, component: ConsultancyTheme },
+  equity: { meta: equityMeta, component: EquityTheme },
+  clevel: { meta: clevelMeta, component: CLevelTheme },
+  keynote: { meta: keynoteMeta, component: KeynoteTheme },
+  storefront: { meta: storefrontMeta, component: StorefrontTheme },
+  boutique: { meta: boutiqueMeta, component: BoutiqueTheme },
+  flash: { meta: flashMeta, component: FlashTheme },
+  marketplace: { meta: marketplaceMeta, component: MarketplaceTheme },
+  dtc: { meta: dtcMeta, component: DtcTheme },
 };
 
 export function getTheme(key: string | undefined | null): BioThemeDefinition {
