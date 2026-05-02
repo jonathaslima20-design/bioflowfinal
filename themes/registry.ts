@@ -2,7 +2,6 @@ import { BrutalistTheme } from './brutalist';
 import { AuroraTheme, auroraMeta } from './aurora';
 import { CyberTheme, cyberMeta } from './cyber';
 import { RetrowaveTheme, retrowaveMeta } from './retrowave';
-import { ClayTheme, clayMeta } from './clay';
 import { AtlasTheme, atlasMeta } from './atlas';
 import { ConversionTheme, conversionMeta } from './conversion';
 import { CreatorTheme, creatorMeta } from './creator';
@@ -11,11 +10,8 @@ import { PrismTheme, prismMeta } from './prism';
 import { NeonLabTheme, neonlabMeta } from './neonlab';
 import { ChromeTheme, chromeMeta } from './chrome';
 import { TerminalTheme, terminalMeta } from './terminal';
-import { AiTheme, aiMeta } from './ai';
-import { MatrixTheme, matrixMeta } from './matrix';
 import { ConsultancyTheme, consultancyMeta } from './consultancy';
 import { KeynoteTheme, keynoteMeta } from './keynote';
-import { FlashTheme, flashMeta } from './flash';
 import type { BioThemeDefaults, BioThemeDefinition, BioThemeMeta } from './types';
 
 const brutalistMeta: BioThemeMeta = {
@@ -42,7 +38,6 @@ export const THEMES: Record<string, BioThemeDefinition> = {
   aurora: { meta: auroraMeta, component: AuroraTheme },
   cyber: { meta: cyberMeta, component: CyberTheme },
   retrowave: { meta: retrowaveMeta, component: RetrowaveTheme },
-  clay: { meta: clayMeta, component: ClayTheme },
   atlas: { meta: atlasMeta, component: AtlasTheme },
   conversion: { meta: conversionMeta, component: ConversionTheme },
   creator: { meta: creatorMeta, component: CreatorTheme },
@@ -51,11 +46,8 @@ export const THEMES: Record<string, BioThemeDefinition> = {
   neonlab: { meta: neonlabMeta, component: NeonLabTheme },
   chrome: { meta: chromeMeta, component: ChromeTheme },
   terminal: { meta: terminalMeta, component: TerminalTheme },
-  ai: { meta: aiMeta, component: AiTheme },
-  matrix: { meta: matrixMeta, component: MatrixTheme },
   consultancy: { meta: consultancyMeta, component: ConsultancyTheme },
   keynote: { meta: keynoteMeta, component: KeynoteTheme },
-  flash: { meta: flashMeta, component: FlashTheme },
 };
 
 export function getTheme(key: string | undefined | null): BioThemeDefinition {
