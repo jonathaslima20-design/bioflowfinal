@@ -1,9 +1,9 @@
 'use client';
 
 import { ExternalLink } from 'lucide-react';
-import Link from 'next/link';
 import { SOCIALS_BY_KEY } from '@/lib/socials';
 import type { BioThemeProps } from '@/themes/types';
+import { BioflowzyBadge } from '@/components/bio/BioflowzyBadge';
 
 const BANNER_HEIGHT: Record<string, string> = { sm: 'h-24', md: 'h-40', lg: 'h-60' };
 
@@ -113,13 +113,7 @@ export function BrutalistTheme({ profile, links, socials, videos, banners, track
           ))}
         </div>
 
-        {!profile.is_pro && (
-          <div className="mt-10 text-center">
-            <Link href="/" className="inline-block brutal-btn bg-black text-bioyellow px-4 py-2 text-xs">
-              feito com BioFlowzy
-            </Link>
-          </div>
-        )}
+        {!profile.is_pro && <BioflowzyBadge bgColor={profile.bg_color} />}
         <div aria-hidden className="h-16" />
       </div>
     </div>

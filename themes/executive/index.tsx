@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { SOCIALS_BY_KEY } from '@/lib/socials';
 import type { BioThemeProps, BioThemeMeta } from '@/themes/types';
 import { getThemeSettings } from '@/themes/types';
+import { BioflowzyBadge } from '@/components/bio/BioflowzyBadge';
 
 export const executiveMeta: BioThemeMeta = {
   key: 'executive',
@@ -303,6 +304,7 @@ export function ExecutiveTheme({ profile, links, socials, videos, banners, track
         >
           {profile.display_name || profile.username} &middot; All rights reserved
         </div>
+        {!profile.is_pro && <BioflowzyBadge bgColor={profile.bg_color} />}
       </div>
     </div>
   );

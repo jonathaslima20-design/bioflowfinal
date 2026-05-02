@@ -4,6 +4,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { SOCIALS_BY_KEY } from '@/lib/socials';
 import type { BioThemeProps, BioThemeMeta } from '@/themes/types';
 import { getThemeSettings } from '@/themes/types';
+import { BioflowzyBadge } from '@/components/bio/BioflowzyBadge';
 
 export const agencyMeta: BioThemeMeta = {
   key: 'agency',
@@ -374,6 +375,7 @@ export function AgencyTheme({ profile, links, socials, videos, banners, track }:
           <span>© {new Date().getFullYear()}</span>
           <span>ALL WORKS RESERVED</span>
         </div>
+        {!profile.is_pro && <BioflowzyBadge bgColor={profile.bg_color} />}
       </div>
 
       <style jsx>{`

@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { SOCIALS_BY_KEY } from '@/lib/socials';
 import type { BioThemeProps, BioThemeMeta } from '@/themes/types';
 import { getThemeSettings } from '@/themes/types';
+import { BioflowzyBadge } from '@/components/bio/BioflowzyBadge';
 
 export const cyberMeta: BioThemeMeta = {
   key: 'cyber',
@@ -237,6 +238,7 @@ export function CyberTheme({ profile, links, socials, videos, banners, track }: 
           </div>
         )}
 
+        {!profile.is_pro && <BioflowzyBadge bgColor={profile.bg_color} />}
         <div aria-hidden className="h-20" />
       </div>
 
