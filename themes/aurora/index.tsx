@@ -32,7 +32,6 @@ export const auroraMeta: BioThemeMeta = {
     ], default: 'medium', group: 'Aurora' },
     { key: 'gradientAngle', label: 'Angulo do gradiente', type: 'slider', min: 0, max: 360, step: 15, suffix: 'deg', default: 135, group: 'Aurora' },
     { key: 'secondaryColor', label: 'Cor secundaria', type: 'color', palette: ['#F0ABFC', '#FDA4AF', '#FDE68A', '#86EFAC', '#7DD3FC', '#C4B5FD'], default: '#F0ABFC', group: 'Aurora' },
-    { key: 'avatarHalo', label: 'Halo do avatar', type: 'toggle', default: true, group: 'Avatar' },
     { key: 'tilt3d', label: 'Tilt 3D nos cards', type: 'toggle', default: true, group: 'Interacoes' },
   ],
 };
@@ -72,13 +71,6 @@ export function AuroraTheme({ profile, links, socials, videos, banners, track }:
       <div className="relative max-w-md mx-auto px-5 pt-[72px] pb-24" style={{ fontFamily: 'var(--font-inter), system-ui' }}>
         <div className="flex flex-col items-center text-center">
           <div className="relative" style={{ width: profile.avatar_size ?? 110, height: profile.avatar_size ?? 110 }}>
-            {s.avatarHalo && (
-              <div
-                className="absolute inset-[-14px] rounded-full pointer-events-none aurora-halo"
-                style={{ background: `conic-gradient(from 0deg, ${accent}, ${secondary}, ${accent})` }}
-                aria-hidden
-              />
-            )}
             <div
               className="relative w-full h-full rounded-full overflow-hidden"
               style={{ border: '2px solid rgba(255,255,255,0.35)', boxShadow: `0 8px 32px ${accent}66, inset 0 1px 0 rgba(255,255,255,0.5)` }}
